@@ -26,7 +26,7 @@ For the most part, the installation for the host computer and the Pi is the same
 
 ## Set locale
 
-`
+```
 locale  # check for UTF-8
 
 sudo apt update && sudo apt install locales
@@ -35,13 +35,13 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 locale  # verify settings
-`
+```
 
 ## Setup sources
 
 You will need to add the ROS2 repository to your system.
 
-`
+```
 sudo apt install software-properties-common
 sudo add-apt-repository universe
-`
+```
