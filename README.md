@@ -93,7 +93,7 @@ source /opt/ros/humble/setup.bash
 
 ## Using this repository
 
-We can now clone our repository:
+We can now clone our repository (on both host and Pi):
 
 ```
 git clone https://github.com/alexrice236/ROS2-Wayfarer.git
@@ -124,3 +124,4 @@ In the root, source our overlay:
 source install/local_setup.bash
 ```
 
+We will now be able to access our launch files and respective packages!
