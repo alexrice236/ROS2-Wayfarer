@@ -90,3 +90,37 @@ Source the setup script; this makes our ROS2 packages available system wide. For
 ```
 source /opt/ros/humble/setup.bash
 ```
+
+## Using this repository
+
+We can now clone our repository:
+
+```
+git clone https://github.com/alexrice236/ROS2-Wayfarer.git
+```
+
+After cloning, we will build our custom packages using colcon.
+
+```
+cd ~/ROS2-Wayfarer
+colcon build
+```
+
+Once the build is finished, open a new terminal and source the underlay:
+
+```
+source /opt/ros/humble/setup.bash
+```
+
+Go into the root of our workspace:
+
+```
+cd ~/ROS2-Wayfarer
+```
+
+In the root, source our overlay:
+
+```
+source install/local_setup.bash
+```
+
