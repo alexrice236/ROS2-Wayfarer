@@ -1,0 +1,5 @@
+source;share/acl_msgs/local_setup.bash
+source;share/acl_msgs/local_setup.dsv
+source;share/acl_msgs/local_setup.ps1
+source;share/acl_msgs/local_setup.sh
+source;share/acl_msgs/local_setup.zsh

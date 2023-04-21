@@ -1,0 +1,11 @@
+{
+  "package_name": "acl_msgs",
+  "non_idl_tuples": [
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/IMU.msg",
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/QuadAttCmd.msg",
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/QuadMotors.msg",
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/State.msg",
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/SMCData.msg",
+    "/home/alex/ROS2-Wayfarer/src/acl_msgs:msg/ViconState.msg"
+  ]
+}

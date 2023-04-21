@@ -1,0 +1,17 @@
+[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+  execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+  acl_msgs --arguments-file
+  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter__arguments__acl_msgs.json
+  --output-dir
+  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs
+  --output-file
+  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs.idls)
+  returned error code 1:
+
+  KeyError processing template 'struct.idl.em': 'time'
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+  CMakeLists.txt:15 (rosidl_generate_interfaces)
+
+[0m

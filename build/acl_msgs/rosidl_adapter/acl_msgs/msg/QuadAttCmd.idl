@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from acl_msgs/msg/QuadAttCmd.msg
+// generated code does not contain a copyright notice
+
+#include "acl_msgs/msg/Header.idl"
+#include "geometry_msgs/msg/Quaternion.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module acl_msgs {
+  module msg {
+    struct QuadAttCmd {
+      acl_msgs::msg::Header header;
+
+      geometry_msgs::msg::Quaternion att;
+
+      geometry_msgs::msg::Vector3 rate;
+
+      double throttle;
+
+      int16 att_status;
+    };
+  };
+};

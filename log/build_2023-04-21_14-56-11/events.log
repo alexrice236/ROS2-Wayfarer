@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (acl_msgs) JobQueued: {'identifier': 'acl_msgs', 'dependencies': OrderedDict()}
+[0.000292] (my_computer) JobQueued: {'identifier': 'my_computer', 'dependencies': OrderedDict()}
+[0.000322] (my_computer_goal) JobQueued: {'identifier': 'my_computer_goal', 'dependencies': OrderedDict()}
+[0.000367] (my_computer_mocap) JobQueued: {'identifier': 'my_computer_mocap', 'dependencies': OrderedDict()}
+[0.000383] (my_computer_plot) JobQueued: {'identifier': 'my_computer_plot', 'dependencies': OrderedDict()}
+[0.000399] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.000415] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.000430] (my_robot_data) JobQueued: {'identifier': 'my_robot_data', 'dependencies': OrderedDict()}
+[0.000445] (optitrack_motive_2_client) JobQueued: {'identifier': 'optitrack_motive_2_client', 'dependencies': OrderedDict([('acl_msgs', '/home/alex/ROS2-Wayfarer/install/acl_msgs')])}
+[0.000465] (acl_msgs) JobStarted: {'identifier': 'acl_msgs'}
+[0.029033] (acl_msgs) JobProgress: {'identifier': 'acl_msgs', 'progress': 'cmake'}
+[0.029431] (acl_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/ROS2-Wayfarer/src/acl_msgs', '-DCMAKE_INSTALL_PREFIX=/home/alex/ROS2-Wayfarer/install/acl_msgs'], 'cwd': '/home/alex/ROS2-Wayfarer/build/acl_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alex'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/alex'), ('OLDPWD', '/home/alex/ROS2-Wayfarer/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alex/ROS2-Wayfarer/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alex'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alex'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/alex-VirtualBox:@/tmp/.ICE-unix/874,unix/alex-VirtualBox:/tmp/.ICE-unix/874'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4475d09a_2116_4b07_8929_30c850777f96'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.J2IL21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alex/ROS2-Wayfarer/install/my_robot_data:/home/alex/ROS2-Wayfarer/install/my_robot_controller:/home/alex/ROS2-Wayfarer/install/my_robot:/home/alex/ROS2-Wayfarer/install/my_computer_plot:/home/alex/ROS2-Wayfarer/install/my_computer_mocap:/home/alex/ROS2-Wayfarer/install/my_computer_goal:/home/alex/ROS2-Wayfarer/install/my_computer:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alex/ROS2-Wayfarer/build/acl_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages:/home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alex/ROS2-Wayfarer/install/my_robot_data:/home/alex/ROS2-Wayfarer/install/my_robot_controller:/home/alex/ROS2-Wayfarer/install/my_robot:/home/alex/ROS2-Wayfarer/install/my_computer_plot:/home/alex/ROS2-Wayfarer/install/my_computer_mocap:/home/alex/ROS2-Wayfarer/install/my_computer_goal:/home/alex/ROS2-Wayfarer/install/my_computer:/opt/ros/humble')]), 'shell': False}
+[0.096083] (-) TimerEvent: {}
+[0.189795] (acl_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.203548] (-) TimerEvent: {}
+[0.285437] (acl_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.295458] (acl_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.304766] (-) TimerEvent: {}
+[0.407508] (-) TimerEvent: {}
+[0.425104] (acl_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.434049] (acl_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.434575] (acl_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.435214] (acl_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.438365] (acl_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.516687] (-) TimerEvent: {}
+[0.619881] (-) TimerEvent: {}
+[0.644194] (acl_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.663728] (acl_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.664254] (acl_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.664860] (acl_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.666914] (acl_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.721252] (-) TimerEvent: {}
+[0.823913] (-) TimerEvent: {}
+[0.905936] (acl_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.931400] (-) TimerEvent: {}
+[1.020845] (acl_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.024345] (acl_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.033578] (acl_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.033776] (-) TimerEvent: {}
+[1.098484] (acl_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.134722] (-) TimerEvent: {}
+[1.240249] (-) TimerEvent: {}
+[1.317129] (acl_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[1.318541] (acl_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name\n'}
+[1.318747] (acl_msgs) StderrLine: {'line': b'  acl_msgs --arguments-file\n'}
+[1.318846] (acl_msgs) StderrLine: {'line': b'  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter__arguments__acl_msgs.json\n'}
+[1.318907] (acl_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[1.318983] (acl_msgs) StderrLine: {'line': b'  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs\n'}
+[1.319073] (acl_msgs) StderrLine: {'line': b'  --output-file\n'}
+[1.325803] (acl_msgs) StderrLine: {'line': b'  /home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs.idls)\n'}
+[1.325901] (acl_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.326073] (acl_msgs) StderrLine: {'line': b'\n'}
+[1.326140] (acl_msgs) StderrLine: {'line': b"  KeyError processing template 'struct.idl.em': 'time'\n"}
+[1.326199] (acl_msgs) StderrLine: {'line': b'\n'}
+[1.326294] (acl_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.326366] (acl_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.326437] (acl_msgs) StderrLine: {'line': b'  CMakeLists.txt:15 (rosidl_generate_interfaces)\n'}
+[1.326491] (acl_msgs) StderrLine: {'line': b'\n'}
+[1.326556] (acl_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.326616] (acl_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.326676] (acl_msgs) StdoutLine: {'line': b'See also "/home/alex/ROS2-Wayfarer/build/acl_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.331899] (acl_msgs) CommandEnded: {'returncode': 1}
+[1.342111] (-) TimerEvent: {}
+[1.361537] (acl_msgs) JobEnded: {'identifier': 'acl_msgs', 'rc': 1}
+[1.362788] (my_computer) JobSkipped: {'identifier': 'my_computer'}
+[1.362818] (my_computer_goal) JobSkipped: {'identifier': 'my_computer_goal'}
+[1.362836] (my_computer_mocap) JobSkipped: {'identifier': 'my_computer_mocap'}
+[1.362851] (my_computer_plot) JobSkipped: {'identifier': 'my_computer_plot'}
+[1.362866] (my_robot) JobSkipped: {'identifier': 'my_robot'}
+[1.362881] (my_robot_controller) JobSkipped: {'identifier': 'my_robot_controller'}
+[1.362896] (my_robot_data) JobSkipped: {'identifier': 'my_robot_data'}
+[1.362910] (optitrack_motive_2_client) JobSkipped: {'identifier': 'optitrack_motive_2_client'}
+[1.362924] (-) EventReactorShutdown: {}

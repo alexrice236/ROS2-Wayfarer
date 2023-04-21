@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from acl_msgs/msg/QuadMotors.msg
+// generated code does not contain a copyright notice
+
+#include "acl_msgs/msg/Header.idl"
+
+module acl_msgs {
+  module msg {
+    struct QuadMotors {
+      acl_msgs::msg::Header header;
+
+      double m1;
+
+      double m2;
+
+      double m3;
+
+      double m4;
+    };
+  };
+};

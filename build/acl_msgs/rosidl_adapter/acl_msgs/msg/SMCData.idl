@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from acl_msgs/msg/SMCData.msg
+// generated code does not contain a copyright notice
+
+#include "acl_msgs/msg/Header.idl"
+#include "geometry_msgs/msg/Quaternion.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module acl_msgs {
+  module msg {
+    struct SMCData {
+      acl_msgs::msg::Header header;
+
+      geometry_msgs::msg::Quaternion q_des;
+
+      geometry_msgs::msg::Quaternion q_act;
+
+      geometry_msgs::msg::Quaternion q_err;
+
+      geometry_msgs::msg::Vector3 w_des;
+
+      geometry_msgs::msg::Vector3 w_act;
+
+      geometry_msgs::msg::Vector3 w_err;
+
+      geometry_msgs::msg::Vector3 s;
+    };
+  };
+};

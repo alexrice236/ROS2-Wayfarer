@@ -1,0 +1,12 @@
+msg/IMU.idl
+msg/IMU.msg
+msg/QuadAttCmd.idl
+msg/QuadAttCmd.msg
+msg/QuadMotors.idl
+msg/QuadMotors.msg
+msg/SMCData.idl
+msg/SMCData.msg
+msg/State.idl
+msg/State.msg
+msg/ViconState.idl
+msg/ViconState.msg

@@ -1,0 +1,6 @@
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/IMU.idl
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/QuadAttCmd.idl
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/QuadMotors.idl
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/State.idl
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/SMCData.idl
+/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_adapter/acl_msgs:msg/ViconState.idl

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_typesupport_cpp/acl_msgs/msg/imu__type_support.cpp:7[m[K:
+[01m[K/home/alex/ROS2-Wayfarer/build/acl_msgs/rosidl_generator_cpp/acl_msgs/msg/detail/imu__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kacl_msgs/msg/detail/header__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"acl_msgs/msg/detail/header__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/acl_msgs__rosidl_typesupport_cpp.dir/build.make:165: CMakeFiles/acl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/acl_msgs/msg/imu__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/acl_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
