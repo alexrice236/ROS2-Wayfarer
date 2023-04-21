@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/ROS2-Wayfarer/build/acl_msgs': /usr/bin/cmake /home/alex/ROS2-Wayfarer/src/acl_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/alex/ROS2-Wayfarer/install/acl_msgs
+Invoked command in '/home/alex/ROS2-Wayfarer/build/acl_msgs' returned '1': /usr/bin/cmake /home/alex/ROS2-Wayfarer/src/acl_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/alex/ROS2-Wayfarer/install/acl_msgs

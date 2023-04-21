@@ -1,3 +1,0 @@
-[console_scripts]
-mocap_pub_node = my_computer_mocap.mocap_pub_node:main
-

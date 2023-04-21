@@ -1,3 +1,0 @@
-[console_scripts]
-goal_pub_node = my_computer_goal.goal_pub_node:main
-

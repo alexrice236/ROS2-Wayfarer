@@ -1,3 +1,0 @@
-[console_scripts]
-plot_sub_node = my_computer_plot.plot_sub_node:main
-

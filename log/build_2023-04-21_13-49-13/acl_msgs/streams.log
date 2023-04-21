@@ -1,0 +1,41 @@
+[0.023s] Invoking command in '/home/alex/ROS2-Wayfarer/build/acl_msgs': /usr/bin/cmake /home/alex/ROS2-Wayfarer/src/acl_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/alex/ROS2-Wayfarer/install/acl_msgs
+[0.050s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.050s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.050s]   CMake.
+[0.050s] 
+[0.051s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.051s]   CMake that the project does not need compatibility with older versions.
+[0.051s] 
+[0.051s] [0m
+[0.168s] -- The C compiler identification is GNU 11.3.0
+[0.266s] -- The CXX compiler identification is GNU 11.3.0
+[0.281s] -- Detecting C compiler ABI info
+[0.394s] -- Detecting C compiler ABI info - done
+[0.404s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.404s] -- Detecting C compile features
+[0.405s] -- Detecting C compile features - done
+[0.410s] -- Detecting CXX compiler ABI info
+[0.552s] -- Detecting CXX compiler ABI info - done
+[0.574s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.575s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.586s] [31mCMake Error at CMakeLists.txt:3 (find_package):
+[0.586s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.586s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.586s]   CMake did not find one.
+[0.586s] 
+[0.587s]   Could not find a package configuration file provided by "catkin" with any
+[0.587s]   of the following names:
+[0.587s] 
+[0.587s]     catkinConfig.cmake
+[0.587s]     catkin-config.cmake
+[0.587s] 
+[0.587s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.587s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.587s]   provides a separate development package or SDK, be sure it has been
+[0.587s]   installed.
+[0.587s] 
+[0.588s] [0m
+[0.588s] -- Configuring incomplete, errors occurred!
+[0.588s] See also "/home/alex/ROS2-Wayfarer/build/acl_msgs/CMakeFiles/CMakeOutput.log".
+[0.594s] Invoked command in '/home/alex/ROS2-Wayfarer/build/acl_msgs' returned '1': /usr/bin/cmake /home/alex/ROS2-Wayfarer/src/acl_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/alex/ROS2-Wayfarer/install/acl_msgs
