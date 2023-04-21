@@ -156,10 +156,13 @@ add_executable(${PROJECT_NAME}_node src/optitrack_motive_2_client_node.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
+add_library(${PROJECT_NAME})
+
 ament_target_dependencies(_node
   rclcpp
   std_msgs
   )
+
 target_link_libraries(target ${Boost_LIBRARIES})
 
 #############
