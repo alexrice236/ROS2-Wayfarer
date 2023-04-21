@@ -168,6 +168,7 @@ add_executable(${PROJECT_NAME}_node src/optitrack_motive_2_client_node.cpp)
 ament_target_dependencies(${PROJECT_NAME}_node
   rclcpp
   std_msgs
+  acl_messages
   )
 
 # target_link_libraries(target ${Boost_LIBRARIES})
