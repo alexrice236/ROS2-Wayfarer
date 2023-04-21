@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 geometry_msgs/Quaternion q_des
 geometry_msgs/Quaternion q_act
 geometry_msgs/Quaternion q_err

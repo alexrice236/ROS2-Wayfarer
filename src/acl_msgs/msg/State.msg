@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 builtin_interfaces/Time state_stamp
 geometry_msgs/Vector3 pos
 geometry_msgs/Vector3 vel
