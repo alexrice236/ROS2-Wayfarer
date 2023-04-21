@@ -29,7 +29,12 @@ add_message_files(
   )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg}
+  "msg/IMU.msg"
+  "msg/QuadAttCmd.msg"
+  "msg/QuadMotors.msg"
+  "msg/State.msg"
+  "msg/SMCData.msg"
+  "msg/ViconState.msg"
   DEPENDENCIES std_msgs geometry_msgs)
 
 ament_export_dependencies(message_runtime std_msgs geometry_msgs)
