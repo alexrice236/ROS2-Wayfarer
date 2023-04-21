@@ -30,7 +30,8 @@ find_package(acl_msgs REQUIRED)
 
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED COMPONENTS program_options)
+find_package(Boost REQUIRED)
+find_package(program_options)
 find_package(Eigen3 REQUIRED NO_MODULE)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -122,9 +123,7 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 ament_export_dependencies(nav_msgs acl_msgs rclcpp std_msgs)
 ament_export_include_directories(include)
 ament_export_libraries(optitrack_motive_2_client)
-ament_package(
-#  DEPENDS system_lib
-)
+ament_package()
 
 ###########
 ## Build ##
@@ -188,7 +187,7 @@ ament_target_dependencies(${PROJECT_NAME}_node
 # )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS _node
+install(TARGETS ${PROJECT_NAME}_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
