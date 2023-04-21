@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(acl_msgs)
-find_package(catkin REQUIRED COMPONENTS 
-  roscpp
-  rospy
-  message_generation 
-  std_msgs 
-  geometry_msgs
-  )
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(message_generation REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
 
 add_message_files(
   DIRECTORY msg
@@ -19,7 +19,9 @@ add_message_files(
   ViconState.msg
   )
 
-generate_messages(DEPENDENCIES std_msgs geometry_msgs)
+rosidl_generate_interfaces(DEPENDENCIES std_msgs geometry_msgs)
 
-catkin_package(CATKIN_DEPENDS message_runtime std_msgs geometry_msgs)
+ament_export_dependencies(message_runtime std_msgs geometry_msgs)
+
+ament_package()
 
