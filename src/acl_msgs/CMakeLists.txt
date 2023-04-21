@@ -17,16 +17,16 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 
-# add_message_files(
-#   DIRECTORY msg
-#   FILES
-#   IMU.msg
-#   QuadAttCmd.msg
-#   QuadMotors.msg
-#   State.msg
-#   SMCData.msg
-#   ViconState.msg
-#   )
+add_message_files(
+  DIRECTORY msg
+  FILES
+  IMU.msg
+  QuadAttCmd.msg
+  QuadMotors.msg
+  State.msg
+  SMCData.msg
+  ViconState.msg
+  )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg}
