@@ -19,8 +19,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/State.msg"
   "msg/SMCData.msg"
   "msg/ViconState.msg"
-  DEPENDENCIES std_msgs geometry_msgs)
-  
+  DEPENDENCIES geometry_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
