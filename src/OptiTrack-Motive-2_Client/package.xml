@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>my_network</name>
+  <name>optitrack_motive_2_client</name>
   <version>0.0.1</version>
   <description>The optitrack_motive_2_client package</description>
 
@@ -48,7 +48,7 @@
   <!--   <test_depend>gtest</test_depend> -->
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
   
   <depend>nav_msgs</depend>
   <depend>roscpp</depend>
