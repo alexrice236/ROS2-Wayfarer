@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: my-robot-data
+Version: 0.0.0
+Summary: Pi executable for sending power and IMU data back to host computer
+Home-page: UNKNOWN
+Maintainer: alex
+Maintainer-email: alexrice826@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+

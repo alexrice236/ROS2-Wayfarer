@@ -1,0 +1,377 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (my_computer) JobQueued: {'identifier': 'my_computer', 'dependencies': OrderedDict()}
+[0.000227] (my_computer_goal) JobQueued: {'identifier': 'my_computer_goal', 'dependencies': OrderedDict()}
+[0.000246] (my_computer_mocap) JobQueued: {'identifier': 'my_computer_mocap', 'dependencies': OrderedDict()}
+[0.000262] (my_computer_plot) JobQueued: {'identifier': 'my_computer_plot', 'dependencies': OrderedDict()}
+[0.000277] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.000293] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.000308] (my_robot_data) JobQueued: {'identifier': 'my_robot_data', 'dependencies': OrderedDict()}
+[0.000323] (my_computer) JobStarted: {'identifier': 'my_computer'}
+[0.096628] (-) TimerEvent: {}
+[0.204103] (-) TimerEvent: {}
+[0.311583] (-) TimerEvent: {}
+[0.411905] (-) TimerEvent: {}
+[0.515767] (-) TimerEvent: {}
+[0.624298] (-) TimerEvent: {}
+[0.731724] (-) TimerEvent: {}
+[0.839761] (-) TimerEvent: {}
+[0.854213] (my_computer) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_computer', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_computer/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_computer/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_computer/my_computer', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_computer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_computer/prefix_override:/home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.947520] (-) TimerEvent: {}
+[1.054102] (-) TimerEvent: {}
+[1.161178] (-) TimerEvent: {}
+[1.172026] (my_computer) StdoutLine: {'line': b'running egg_info\n'}
+[1.172962] (my_computer) StdoutLine: {'line': b'creating ../../../build/my_computer/my_computer.egg-info\n'}
+[1.173294] (my_computer) StdoutLine: {'line': b'writing ../../../build/my_computer/my_computer.egg-info/PKG-INFO\n'}
+[1.173740] (my_computer) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_computer/my_computer.egg-info/dependency_links.txt\n'}
+[1.174192] (my_computer) StdoutLine: {'line': b'writing entry points to ../../../build/my_computer/my_computer.egg-info/entry_points.txt\n'}
+[1.174469] (my_computer) StdoutLine: {'line': b'writing requirements to ../../../build/my_computer/my_computer.egg-info/requires.txt\n'}
+[1.174729] (my_computer) StdoutLine: {'line': b'writing top-level names to ../../../build/my_computer/my_computer.egg-info/top_level.txt\n'}
+[1.175080] (my_computer) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer/my_computer.egg-info/SOURCES.txt'\n"}
+[1.177145] (my_computer) StdoutLine: {'line': b"reading manifest file '../../../build/my_computer/my_computer.egg-info/SOURCES.txt'\n"}
+[1.180471] (my_computer) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer/my_computer.egg-info/SOURCES.txt'\n"}
+[1.181842] (my_computer) StdoutLine: {'line': b'running build\n'}
+[1.182056] (my_computer) StdoutLine: {'line': b'running build_py\n'}
+[1.182424] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer/build\n'}
+[1.182635] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer/build/lib\n'}
+[1.182819] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer/build/lib/my_computer\n'}
+[1.183050] (my_computer) StdoutLine: {'line': b'copying my_computer/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_computer/build/lib/my_computer\n'}
+[1.183413] (my_computer) StdoutLine: {'line': b'running install\n'}
+[1.184092] (my_computer) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.184290] (my_computer) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.184910] (my_computer) StdoutLine: {'line': b'running install_lib\n'}
+[1.185876] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages/my_computer\n'}
+[1.186129] (my_computer) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer/build/lib/my_computer/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages/my_computer\n'}
+[1.186836] (my_computer) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages/my_computer/__init__.py to __init__.cpython-310.pyc\n'}
+[1.187224] (my_computer) StdoutLine: {'line': b'running install_data\n'}
+[1.187968] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer/share/ament_index\n'}
+[1.188163] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer/share/ament_index/resource_index\n'}
+[1.188470] (my_computer) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer/share/ament_index/resource_index/packages\n'}
+[1.188691] (my_computer) StdoutLine: {'line': b'copying resource/my_computer -> /home/alex/ROS2-Wayfarer/install/my_computer/share/ament_index/resource_index/packages\n'}
+[1.188964] (my_computer) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_computer/share/my_computer\n'}
+[1.189247] (my_computer) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.191186] (my_computer) StdoutLine: {'line': b'Copying ../../../build/my_computer/my_computer.egg-info to /home/alex/ROS2-Wayfarer/install/my_computer/lib/python3.10/site-packages/my_computer-0.0.0-py3.10.egg-info\n'}
+[1.192405] (my_computer) StdoutLine: {'line': b'running install_scripts\n'}
+[1.237095] (my_computer) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_computer/install.log'\n"}
+[1.261489] (-) TimerEvent: {}
+[1.270670] (my_computer) CommandEnded: {'returncode': 0}
+[1.285414] (my_computer) JobEnded: {'identifier': 'my_computer', 'rc': 0}
+[1.286221] (my_computer_goal) JobStarted: {'identifier': 'my_computer_goal'}
+[1.366941] (-) TimerEvent: {}
+[1.472886] (-) TimerEvent: {}
+[1.580090] (-) TimerEvent: {}
+[1.684920] (-) TimerEvent: {}
+[1.788306] (-) TimerEvent: {}
+[1.894578] (-) TimerEvent: {}
+[2.000043] (-) TimerEvent: {}
+[2.107627] (-) TimerEvent: {}
+[2.125733] (my_computer_goal) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_computer_goal', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_computer_goal/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_computer_goal/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_computer/my_computer_goal', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_computer_goal', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_computer_goal/prefix_override:/home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.215736] (-) TimerEvent: {}
+[2.323868] (-) TimerEvent: {}
+[2.432337] (-) TimerEvent: {}
+[2.471571] (my_computer_goal) StdoutLine: {'line': b'running egg_info\n'}
+[2.484361] (my_computer_goal) StdoutLine: {'line': b'creating ../../../build/my_computer_goal/my_computer_goal.egg-info\n'}
+[2.484767] (my_computer_goal) StdoutLine: {'line': b'writing ../../../build/my_computer_goal/my_computer_goal.egg-info/PKG-INFO\n'}
+[2.485290] (my_computer_goal) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_computer_goal/my_computer_goal.egg-info/dependency_links.txt\n'}
+[2.485577] (my_computer_goal) StdoutLine: {'line': b'writing entry points to ../../../build/my_computer_goal/my_computer_goal.egg-info/entry_points.txt\n'}
+[2.485820] (my_computer_goal) StdoutLine: {'line': b'writing requirements to ../../../build/my_computer_goal/my_computer_goal.egg-info/requires.txt\n'}
+[2.486054] (my_computer_goal) StdoutLine: {'line': b'writing top-level names to ../../../build/my_computer_goal/my_computer_goal.egg-info/top_level.txt\n'}
+[2.486391] (my_computer_goal) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_goal/my_computer_goal.egg-info/SOURCES.txt'\n"}
+[2.488175] (my_computer_goal) StdoutLine: {'line': b"reading manifest file '../../../build/my_computer_goal/my_computer_goal.egg-info/SOURCES.txt'\n"}
+[2.489021] (my_computer_goal) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_goal/my_computer_goal.egg-info/SOURCES.txt'\n"}
+[2.496300] (my_computer_goal) StdoutLine: {'line': b'running build\n'}
+[2.496606] (my_computer_goal) StdoutLine: {'line': b'running build_py\n'}
+[2.497364] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_goal/build\n'}
+[2.497734] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib\n'}
+[2.497953] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib/my_computer_goal\n'}
+[2.498198] (my_computer_goal) StdoutLine: {'line': b'copying my_computer_goal/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib/my_computer_goal\n'}
+[2.498541] (my_computer_goal) StdoutLine: {'line': b'copying my_computer_goal/goal_pub_node.py -> /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib/my_computer_goal\n'}
+[2.499179] (my_computer_goal) StdoutLine: {'line': b'running install\n'}
+[2.499474] (my_computer_goal) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.499680] (my_computer_goal) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.500140] (my_computer_goal) StdoutLine: {'line': b'running install_lib\n'}
+[2.500963] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal\n'}
+[2.501187] (my_computer_goal) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib/my_computer_goal/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal\n'}
+[2.501427] (my_computer_goal) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_goal/build/lib/my_computer_goal/goal_pub_node.py -> /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal\n'}
+[2.502092] (my_computer_goal) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal/__init__.py to __init__.cpython-310.pyc\n'}
+[2.502478] (my_computer_goal) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal/goal_pub_node.py to goal_pub_node.cpython-310.pyc\n'}
+[2.502998] (my_computer_goal) StdoutLine: {'line': b'running install_data\n'}
+[2.503606] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_goal/share/ament_index\n'}
+[2.503791] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_goal/share/ament_index/resource_index\n'}
+[2.503961] (my_computer_goal) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_goal/share/ament_index/resource_index/packages\n'}
+[2.504155] (my_computer_goal) StdoutLine: {'line': b'copying resource/my_computer_goal -> /home/alex/ROS2-Wayfarer/install/my_computer_goal/share/ament_index/resource_index/packages\n'}
+[2.504799] (my_computer_goal) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_computer_goal/share/my_computer_goal\n'}
+[2.505034] (my_computer_goal) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.506748] (my_computer_goal) StdoutLine: {'line': b'Copying ../../../build/my_computer_goal/my_computer_goal.egg-info to /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/python3.10/site-packages/my_computer_goal-0.0.0-py3.10.egg-info\n'}
+[2.507744] (my_computer_goal) StdoutLine: {'line': b'running install_scripts\n'}
+[2.532329] (my_computer_goal) StdoutLine: {'line': b'Installing goal_pub_node script to /home/alex/ROS2-Wayfarer/install/my_computer_goal/lib/my_computer_goal\n'}
+[2.532479] (-) TimerEvent: {}
+[2.533071] (my_computer_goal) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_computer_goal/install.log'\n"}
+[2.560446] (my_computer_goal) CommandEnded: {'returncode': 0}
+[2.567349] (my_computer_goal) JobEnded: {'identifier': 'my_computer_goal', 'rc': 0}
+[2.582306] (my_computer_mocap) JobStarted: {'identifier': 'my_computer_mocap'}
+[2.635667] (-) TimerEvent: {}
+[2.742260] (-) TimerEvent: {}
+[2.848687] (-) TimerEvent: {}
+[2.955662] (-) TimerEvent: {}
+[3.063630] (-) TimerEvent: {}
+[3.171555] (-) TimerEvent: {}
+[3.279579] (-) TimerEvent: {}
+[3.384845] (-) TimerEvent: {}
+[3.413689] (my_computer_mocap) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_computer_mocap', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_computer_mocap/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_computer_mocap/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_computer/my_computer_mocap', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_computer_mocap', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_computer_mocap/prefix_override:/home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.495531] (-) TimerEvent: {}
+[3.599560] (-) TimerEvent: {}
+[3.707582] (-) TimerEvent: {}
+[3.728908] (my_computer_mocap) StdoutLine: {'line': b'running egg_info\n'}
+[3.730036] (my_computer_mocap) StdoutLine: {'line': b'creating ../../../build/my_computer_mocap/my_computer_mocap.egg-info\n'}
+[3.730361] (my_computer_mocap) StdoutLine: {'line': b'writing ../../../build/my_computer_mocap/my_computer_mocap.egg-info/PKG-INFO\n'}
+[3.730774] (my_computer_mocap) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_computer_mocap/my_computer_mocap.egg-info/dependency_links.txt\n'}
+[3.731065] (my_computer_mocap) StdoutLine: {'line': b'writing entry points to ../../../build/my_computer_mocap/my_computer_mocap.egg-info/entry_points.txt\n'}
+[3.731372] (my_computer_mocap) StdoutLine: {'line': b'writing requirements to ../../../build/my_computer_mocap/my_computer_mocap.egg-info/requires.txt\n'}
+[3.731577] (my_computer_mocap) StdoutLine: {'line': b'writing top-level names to ../../../build/my_computer_mocap/my_computer_mocap.egg-info/top_level.txt\n'}
+[3.731988] (my_computer_mocap) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_mocap/my_computer_mocap.egg-info/SOURCES.txt'\n"}
+[3.733564] (my_computer_mocap) StdoutLine: {'line': b"reading manifest file '../../../build/my_computer_mocap/my_computer_mocap.egg-info/SOURCES.txt'\n"}
+[3.734416] (my_computer_mocap) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_mocap/my_computer_mocap.egg-info/SOURCES.txt'\n"}
+[3.751702] (my_computer_mocap) StdoutLine: {'line': b'running build\n'}
+[3.751945] (my_computer_mocap) StdoutLine: {'line': b'running build_py\n'}
+[3.752323] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build\n'}
+[3.752518] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib\n'}
+[3.752685] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib/my_computer_mocap\n'}
+[3.752887] (my_computer_mocap) StdoutLine: {'line': b'copying my_computer_mocap/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib/my_computer_mocap\n'}
+[3.753148] (my_computer_mocap) StdoutLine: {'line': b'copying my_computer_mocap/mocap_pub_node.py -> /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib/my_computer_mocap\n'}
+[3.753516] (my_computer_mocap) StdoutLine: {'line': b'running install\n'}
+[3.753793] (my_computer_mocap) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.753926] (my_computer_mocap) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.754433] (my_computer_mocap) StdoutLine: {'line': b'running install_lib\n'}
+[3.755345] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap\n'}
+[3.755567] (my_computer_mocap) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib/my_computer_mocap/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap\n'}
+[3.755802] (my_computer_mocap) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_mocap/build/lib/my_computer_mocap/mocap_pub_node.py -> /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap\n'}
+[3.756411] (my_computer_mocap) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap/__init__.py to __init__.cpython-310.pyc\n'}
+[3.756767] (my_computer_mocap) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap/mocap_pub_node.py to mocap_pub_node.cpython-310.pyc\n'}
+[3.757345] (my_computer_mocap) StdoutLine: {'line': b'running install_data\n'}
+[3.757923] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_mocap/share/ament_index\n'}
+[3.758133] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_mocap/share/ament_index/resource_index\n'}
+[3.758315] (my_computer_mocap) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_mocap/share/ament_index/resource_index/packages\n'}
+[3.758512] (my_computer_mocap) StdoutLine: {'line': b'copying resource/my_computer_mocap -> /home/alex/ROS2-Wayfarer/install/my_computer_mocap/share/ament_index/resource_index/packages\n'}
+[3.758755] (my_computer_mocap) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_computer_mocap/share/my_computer_mocap\n'}
+[3.758965] (my_computer_mocap) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.761136] (my_computer_mocap) StdoutLine: {'line': b'Copying ../../../build/my_computer_mocap/my_computer_mocap.egg-info to /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/python3.10/site-packages/my_computer_mocap-0.0.0-py3.10.egg-info\n'}
+[3.762106] (my_computer_mocap) StdoutLine: {'line': b'running install_scripts\n'}
+[3.787632] (my_computer_mocap) StdoutLine: {'line': b'Installing mocap_pub_node script to /home/alex/ROS2-Wayfarer/install/my_computer_mocap/lib/my_computer_mocap\n'}
+[3.788192] (my_computer_mocap) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_computer_mocap/install.log'\n"}
+[3.817138] (my_computer_mocap) CommandEnded: {'returncode': 0}
+[3.817809] (-) TimerEvent: {}
+[3.826990] (my_computer_mocap) JobEnded: {'identifier': 'my_computer_mocap', 'rc': 0}
+[3.827775] (my_computer_plot) JobStarted: {'identifier': 'my_computer_plot'}
+[3.920364] (-) TimerEvent: {}
+[4.027799] (-) TimerEvent: {}
+[4.135610] (-) TimerEvent: {}
+[4.243535] (-) TimerEvent: {}
+[4.351623] (-) TimerEvent: {}
+[4.456700] (-) TimerEvent: {}
+[4.564071] (-) TimerEvent: {}
+[4.671793] (-) TimerEvent: {}
+[4.690817] (my_computer_plot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_computer_plot', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_computer_plot/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_computer_plot/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_computer/my_computer_plot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_computer_plot', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_computer_plot/prefix_override:/home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.803945] (-) TimerEvent: {}
+[4.908027] (-) TimerEvent: {}
+[5.015793] (-) TimerEvent: {}
+[5.038568] (my_computer_plot) StdoutLine: {'line': b'running egg_info\n'}
+[5.039662] (my_computer_plot) StdoutLine: {'line': b'creating ../../../build/my_computer_plot/my_computer_plot.egg-info\n'}
+[5.039982] (my_computer_plot) StdoutLine: {'line': b'writing ../../../build/my_computer_plot/my_computer_plot.egg-info/PKG-INFO\n'}
+[5.040441] (my_computer_plot) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_computer_plot/my_computer_plot.egg-info/dependency_links.txt\n'}
+[5.040908] (my_computer_plot) StdoutLine: {'line': b'writing entry points to ../../../build/my_computer_plot/my_computer_plot.egg-info/entry_points.txt\n'}
+[5.041159] (my_computer_plot) StdoutLine: {'line': b'writing requirements to ../../../build/my_computer_plot/my_computer_plot.egg-info/requires.txt\n'}
+[5.041369] (my_computer_plot) StdoutLine: {'line': b'writing top-level names to ../../../build/my_computer_plot/my_computer_plot.egg-info/top_level.txt\n'}
+[5.041752] (my_computer_plot) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_plot/my_computer_plot.egg-info/SOURCES.txt'\n"}
+[5.043418] (my_computer_plot) StdoutLine: {'line': b"reading manifest file '../../../build/my_computer_plot/my_computer_plot.egg-info/SOURCES.txt'\n"}
+[5.044300] (my_computer_plot) StdoutLine: {'line': b"writing manifest file '../../../build/my_computer_plot/my_computer_plot.egg-info/SOURCES.txt'\n"}
+[5.060733] (my_computer_plot) StdoutLine: {'line': b'running build\n'}
+[5.061114] (my_computer_plot) StdoutLine: {'line': b'running build_py\n'}
+[5.061552] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_plot/build\n'}
+[5.061913] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib\n'}
+[5.062248] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib/my_computer_plot\n'}
+[5.062477] (my_computer_plot) StdoutLine: {'line': b'copying my_computer_plot/plot_sub_node.py -> /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib/my_computer_plot\n'}
+[5.062776] (my_computer_plot) StdoutLine: {'line': b'copying my_computer_plot/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib/my_computer_plot\n'}
+[5.063168] (my_computer_plot) StdoutLine: {'line': b'running install\n'}
+[5.063453] (my_computer_plot) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.063593] (my_computer_plot) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.064094] (my_computer_plot) StdoutLine: {'line': b'running install_lib\n'}
+[5.068679] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot\n'}
+[5.068805] (my_computer_plot) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib/my_computer_plot/plot_sub_node.py -> /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot\n'}
+[5.068935] (my_computer_plot) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_computer_plot/build/lib/my_computer_plot/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot\n'}
+[5.068995] (my_computer_plot) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot/plot_sub_node.py to plot_sub_node.cpython-310.pyc\n'}
+[5.069051] (my_computer_plot) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot/__init__.py to __init__.cpython-310.pyc\n'}
+[5.069106] (my_computer_plot) StdoutLine: {'line': b'running install_data\n'}
+[5.069159] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_plot/share/ament_index\n'}
+[5.069213] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_plot/share/ament_index/resource_index\n'}
+[5.069266] (my_computer_plot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_computer_plot/share/ament_index/resource_index/packages\n'}
+[5.069319] (my_computer_plot) StdoutLine: {'line': b'copying resource/my_computer_plot -> /home/alex/ROS2-Wayfarer/install/my_computer_plot/share/ament_index/resource_index/packages\n'}
+[5.069373] (my_computer_plot) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_computer_plot/share/my_computer_plot\n'}
+[5.069425] (my_computer_plot) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.070113] (my_computer_plot) StdoutLine: {'line': b'Copying ../../../build/my_computer_plot/my_computer_plot.egg-info to /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/python3.10/site-packages/my_computer_plot-0.0.0-py3.10.egg-info\n'}
+[5.071132] (my_computer_plot) StdoutLine: {'line': b'running install_scripts\n'}
+[5.095930] (my_computer_plot) StdoutLine: {'line': b'Installing plot_sub_node script to /home/alex/ROS2-Wayfarer/install/my_computer_plot/lib/my_computer_plot\n'}
+[5.096591] (my_computer_plot) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_computer_plot/install.log'\n"}
+[5.124695] (my_computer_plot) CommandEnded: {'returncode': 0}
+[5.125311] (-) TimerEvent: {}
+[5.132024] (my_computer_plot) JobEnded: {'identifier': 'my_computer_plot', 'rc': 0}
+[5.133441] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[5.230125] (-) TimerEvent: {}
+[5.337300] (-) TimerEvent: {}
+[5.447609] (-) TimerEvent: {}
+[5.555566] (-) TimerEvent: {}
+[5.661231] (-) TimerEvent: {}
+[5.768213] (-) TimerEvent: {}
+[5.875733] (-) TimerEvent: {}
+[5.980477] (my_robot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_robot', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_robot/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_robot/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_robot/my_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_robot', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_robot/prefix_override:/home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[5.981010] (-) TimerEvent: {}
+[6.099784] (-) TimerEvent: {}
+[6.208395] (-) TimerEvent: {}
+[6.302561] (my_robot) StdoutLine: {'line': b'running egg_info\n'}
+[6.303785] (my_robot) StdoutLine: {'line': b'creating ../../../build/my_robot/my_robot.egg-info\n'}
+[6.304108] (my_robot) StdoutLine: {'line': b'writing ../../../build/my_robot/my_robot.egg-info/PKG-INFO\n'}
+[6.304534] (my_robot) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_robot/my_robot.egg-info/dependency_links.txt\n'}
+[6.304966] (my_robot) StdoutLine: {'line': b'writing entry points to ../../../build/my_robot/my_robot.egg-info/entry_points.txt\n'}
+[6.305226] (my_robot) StdoutLine: {'line': b'writing requirements to ../../../build/my_robot/my_robot.egg-info/requires.txt\n'}
+[6.305503] (my_robot) StdoutLine: {'line': b'writing top-level names to ../../../build/my_robot/my_robot.egg-info/top_level.txt\n'}
+[6.305820] (my_robot) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[6.307568] (my_robot) StdoutLine: {'line': b"reading manifest file '../../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[6.308429] (my_robot) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[6.308521] (-) TimerEvent: {}
+[6.310670] (my_robot) StdoutLine: {'line': b'running build\n'}
+[6.310832] (my_robot) StdoutLine: {'line': b'running build_py\n'}
+[6.311254] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot/build\n'}
+[6.311483] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot/build/lib\n'}
+[6.311656] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot/build/lib/my_robot\n'}
+[6.311861] (my_robot) StdoutLine: {'line': b'copying my_robot/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_robot/build/lib/my_robot\n'}
+[6.312238] (my_robot) StdoutLine: {'line': b'running install\n'}
+[6.312502] (my_robot) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.312638] (my_robot) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.313112] (my_robot) StdoutLine: {'line': b'running install_lib\n'}
+[6.313901] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages/my_robot\n'}
+[6.315649] (my_robot) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_robot/build/lib/my_robot/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages/my_robot\n'}
+[6.316349] (my_robot) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages/my_robot/__init__.py to __init__.cpython-310.pyc\n'}
+[6.316696] (my_robot) StdoutLine: {'line': b'running install_data\n'}
+[6.317353] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot/share/ament_index\n'}
+[6.317539] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot/share/ament_index/resource_index\n'}
+[6.317711] (my_robot) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot/share/ament_index/resource_index/packages\n'}
+[6.317906] (my_robot) StdoutLine: {'line': b'copying resource/my_robot -> /home/alex/ROS2-Wayfarer/install/my_robot/share/ament_index/resource_index/packages\n'}
+[6.318320] (my_robot) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_robot/share/my_robot\n'}
+[6.318531] (my_robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.320300] (my_robot) StdoutLine: {'line': b'Copying ../../../build/my_robot/my_robot.egg-info to /home/alex/ROS2-Wayfarer/install/my_robot/lib/python3.10/site-packages/my_robot-0.0.0-py3.10.egg-info\n'}
+[6.321326] (my_robot) StdoutLine: {'line': b'running install_scripts\n'}
+[6.343761] (my_robot) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_robot/install.log'\n"}
+[6.418330] (my_robot) CommandEnded: {'returncode': 0}
+[6.419382] (-) TimerEvent: {}
+[6.465077] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[6.466148] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[6.520054] (-) TimerEvent: {}
+[6.626108] (-) TimerEvent: {}
+[6.726697] (-) TimerEvent: {}
+[6.829999] (-) TimerEvent: {}
+[6.937087] (-) TimerEvent: {}
+[7.044169] (-) TimerEvent: {}
+[7.151787] (-) TimerEvent: {}
+[7.264386] (-) TimerEvent: {}
+[7.367671] (-) TimerEvent: {}
+[7.475612] (-) TimerEvent: {}
+[7.581916] (-) TimerEvent: {}
+[7.604313] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_robot_controller', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_robot_controller/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_robot_controller/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_robot/my_robot_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_robot_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_robot_controller/prefix_override:/home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.688326] (-) TimerEvent: {}
+[7.803992] (-) TimerEvent: {}
+[7.904773] (-) TimerEvent: {}
+[7.967765] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[7.968806] (my_robot_controller) StdoutLine: {'line': b'creating ../../../build/my_robot_controller/my_robot_controller.egg-info\n'}
+[7.971650] (my_robot_controller) StdoutLine: {'line': b'writing ../../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO\n'}
+[7.972188] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt\n'}
+[7.973074] (my_robot_controller) StdoutLine: {'line': b'writing entry points to ../../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt\n'}
+[7.973420] (my_robot_controller) StdoutLine: {'line': b'writing requirements to ../../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt\n'}
+[7.973660] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to ../../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt\n'}
+[7.974371] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[7.976182] (my_robot_controller) StdoutLine: {'line': b"reading manifest file '../../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[7.977524] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[7.979509] (my_robot_controller) StdoutLine: {'line': b'running build\n'}
+[7.979721] (my_robot_controller) StdoutLine: {'line': b'running build_py\n'}
+[7.980021] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_controller/build\n'}
+[7.980208] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib\n'}
+[7.980378] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[7.980625] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/controller_node.py -> /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[7.980908] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[7.981232] (my_robot_controller) StdoutLine: {'line': b'running install\n'}
+[7.981598] (my_robot_controller) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.981735] (my_robot_controller) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.982240] (my_robot_controller) StdoutLine: {'line': b'running install_lib\n'}
+[7.983154] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[7.983380] (my_robot_controller) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib/my_robot_controller/controller_node.py -> /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[7.983701] (my_robot_controller) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[7.984286] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/controller_node.py to controller_node.cpython-310.pyc\n'}
+[7.984859] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc\n'}
+[7.985155] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[7.985841] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_controller/share/ament_index\n'}
+[7.986028] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_controller/share/ament_index/resource_index\n'}
+[7.986196] (my_robot_controller) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[7.986394] (my_robot_controller) StdoutLine: {'line': b'copying resource/my_robot_controller -> /home/alex/ROS2-Wayfarer/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[7.986669] (my_robot_controller) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_robot_controller/share/my_robot_controller\n'}
+[7.986882] (my_robot_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.988898] (my_robot_controller) StdoutLine: {'line': b'Copying ../../../build/my_robot_controller/my_robot_controller.egg-info to /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info\n'}
+[7.990102] (my_robot_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[8.010634] (-) TimerEvent: {}
+[8.013097] (my_robot_controller) StdoutLine: {'line': b'Installing controller_node script to /home/alex/ROS2-Wayfarer/install/my_robot_controller/lib/my_robot_controller\n'}
+[8.013632] (my_robot_controller) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_robot_controller/install.log'\n"}
+[8.053992] (my_robot_controller) CommandEnded: {'returncode': 0}
+[8.063936] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[8.064611] (my_robot_data) JobStarted: {'identifier': 'my_robot_data'}
+[8.117069] (-) TimerEvent: {}
+[8.224867] (-) TimerEvent: {}
+[8.331765] (-) TimerEvent: {}
+[8.440658] (-) TimerEvent: {}
+[8.547543] (-) TimerEvent: {}
+[8.655885] (-) TimerEvent: {}
+[8.760854] (-) TimerEvent: {}
+[8.867950] (-) TimerEvent: {}
+[8.975537] (-) TimerEvent: {}
+[9.075980] (-) TimerEvent: {}
+[9.113714] (my_robot_data) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../../build/my_robot_data', 'build', '--build-base', '/home/alex/ROS2-Wayfarer/build/my_robot_data/build', 'install', '--record', '/home/alex/ROS2-Wayfarer/build/my_robot_data/install.log', '--single-version-externally-managed'], 'cwd': '/home/alex/ROS2-Wayfarer/src/my_robot/my_robot_data', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '937', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alex', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alex-VirtualBox:@/tmp/.ICE-unix/909,unix/alex-VirtualBox:/tmp/.ICE-unix/909', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a3efe62e_53c4_4f51_89e8_c7ee773bda00', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YM7211', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alex/ROS2-Wayfarer/build/my_robot_data', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alex/ROS2-Wayfarer/build/my_robot_data/prefix_override:/home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[9.176169] (-) TimerEvent: {}
+[9.279602] (-) TimerEvent: {}
+[9.384919] (-) TimerEvent: {}
+[9.462253] (my_robot_data) StdoutLine: {'line': b'running egg_info\n'}
+[9.463423] (my_robot_data) StdoutLine: {'line': b'creating ../../../build/my_robot_data/my_robot_data.egg-info\n'}
+[9.463814] (my_robot_data) StdoutLine: {'line': b'writing ../../../build/my_robot_data/my_robot_data.egg-info/PKG-INFO\n'}
+[9.464196] (my_robot_data) StdoutLine: {'line': b'writing dependency_links to ../../../build/my_robot_data/my_robot_data.egg-info/dependency_links.txt\n'}
+[9.464486] (my_robot_data) StdoutLine: {'line': b'writing entry points to ../../../build/my_robot_data/my_robot_data.egg-info/entry_points.txt\n'}
+[9.464818] (my_robot_data) StdoutLine: {'line': b'writing requirements to ../../../build/my_robot_data/my_robot_data.egg-info/requires.txt\n'}
+[9.465038] (my_robot_data) StdoutLine: {'line': b'writing top-level names to ../../../build/my_robot_data/my_robot_data.egg-info/top_level.txt\n'}
+[9.465379] (my_robot_data) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot_data/my_robot_data.egg-info/SOURCES.txt'\n"}
+[9.467089] (my_robot_data) StdoutLine: {'line': b"reading manifest file '../../../build/my_robot_data/my_robot_data.egg-info/SOURCES.txt'\n"}
+[9.467999] (my_robot_data) StdoutLine: {'line': b"writing manifest file '../../../build/my_robot_data/my_robot_data.egg-info/SOURCES.txt'\n"}
+[9.469460] (my_robot_data) StdoutLine: {'line': b'running build\n'}
+[9.469696] (my_robot_data) StdoutLine: {'line': b'running build_py\n'}
+[9.470000] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_data/build\n'}
+[9.470192] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib\n'}
+[9.470367] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib/my_robot_data\n'}
+[9.470633] (my_robot_data) StdoutLine: {'line': b'copying my_robot_data/data_pub_node.py -> /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib/my_robot_data\n'}
+[9.470911] (my_robot_data) StdoutLine: {'line': b'copying my_robot_data/__init__.py -> /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib/my_robot_data\n'}
+[9.471248] (my_robot_data) StdoutLine: {'line': b'running install\n'}
+[9.471666] (my_robot_data) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[9.471857] (my_robot_data) StderrLine: {'line': b'  warnings.warn(\n'}
+[9.472564] (my_robot_data) StdoutLine: {'line': b'running install_lib\n'}
+[9.473905] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data\n'}
+[9.474219] (my_robot_data) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib/my_robot_data/data_pub_node.py -> /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data\n'}
+[9.474657] (my_robot_data) StdoutLine: {'line': b'copying /home/alex/ROS2-Wayfarer/build/my_robot_data/build/lib/my_robot_data/__init__.py -> /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data\n'}
+[9.475294] (my_robot_data) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data/data_pub_node.py to data_pub_node.cpython-310.pyc\n'}
+[9.475951] (my_robot_data) StdoutLine: {'line': b'byte-compiling /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data/__init__.py to __init__.cpython-310.pyc\n'}
+[9.476265] (my_robot_data) StdoutLine: {'line': b'running install_data\n'}
+[9.476914] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_data/share/ament_index\n'}
+[9.477109] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_data/share/ament_index/resource_index\n'}
+[9.477320] (my_robot_data) StdoutLine: {'line': b'creating /home/alex/ROS2-Wayfarer/install/my_robot_data/share/ament_index/resource_index/packages\n'}
+[9.477555] (my_robot_data) StdoutLine: {'line': b'copying resource/my_robot_data -> /home/alex/ROS2-Wayfarer/install/my_robot_data/share/ament_index/resource_index/packages\n'}
+[9.477813] (my_robot_data) StdoutLine: {'line': b'copying package.xml -> /home/alex/ROS2-Wayfarer/install/my_robot_data/share/my_robot_data\n'}
+[9.478037] (my_robot_data) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.479803] (my_robot_data) StdoutLine: {'line': b'Copying ../../../build/my_robot_data/my_robot_data.egg-info to /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/python3.10/site-packages/my_robot_data-0.0.0-py3.10.egg-info\n'}
+[9.480898] (my_robot_data) StdoutLine: {'line': b'running install_scripts\n'}
+[9.487647] (-) TimerEvent: {}
+[9.507914] (my_robot_data) StdoutLine: {'line': b'Installing data_pub_node script to /home/alex/ROS2-Wayfarer/install/my_robot_data/lib/my_robot_data\n'}
+[9.508512] (my_robot_data) StdoutLine: {'line': b"writing list of installed files to '/home/alex/ROS2-Wayfarer/build/my_robot_data/install.log'\n"}
+[9.554746] (my_robot_data) CommandEnded: {'returncode': 0}
+[9.562942] (my_robot_data) JobEnded: {'identifier': 'my_robot_data', 'rc': 0}
+[9.563848] (-) EventReactorShutdown: {}
