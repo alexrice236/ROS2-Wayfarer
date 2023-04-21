@@ -12,13 +12,22 @@ endif()
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(ament_cmake REQUIRED COMPONENTS
-  nav_msgs
-  ${rclcpp_LIBRARIES}
-  rcltime
-  std_msgs
-  acl_msgs # used for compatibility with ACL group's Vicon message type.
-)
+# find_package(ament_cmake REQUIRED COMPONENTS
+#   nav_msgs
+#   ${rclcpp_LIBRARIES}
+#   rcltime
+#   std_msgs
+#   acl_msgs # used for compatibility with ACL group's Vicon message type.
+# )
+
+find_package(ament_cmake REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rcltime REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(acl_msgs REQUIRED)
+
+
 
 ## System dependencies are found with CMake's conventions
 find_package(Boost REQUIRED COMPONENTS program_options)
@@ -110,7 +119,7 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 
-ament_export_dependencies(nav_msgs acl_msgs ${rclcpp_LIBRARIES} rcltime std_msgs)
+ament_export_dependencies(nav_msgs acl_msgs rclcpp rcltime std_msgs)
 ament_export_include_directories(include)
 ament_export_libraries(optitrack_motive_2_client)
 ament_package(
@@ -159,7 +168,7 @@ add_executable(${PROJECT_NAME}_node src/optitrack_motive_2_client_node.cpp)
 add_library(${PROJECT_NAME})
 
 ament_target_dependencies(${PROJECT_NAME}_node
-  ${rclcpp_LIBRARIES}
+  rclcpp
   std_msgs
   )
 
