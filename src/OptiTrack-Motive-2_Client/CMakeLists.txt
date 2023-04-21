@@ -23,7 +23,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rcltime REQUIRED)
+# find_package(rcltime REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(acl_msgs REQUIRED)
 
@@ -119,7 +119,7 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 
-ament_export_dependencies(nav_msgs acl_msgs rclcpp rcltime std_msgs)
+ament_export_dependencies(nav_msgs acl_msgs rclcpp std_msgs)
 ament_export_include_directories(include)
 ament_export_libraries(optitrack_motive_2_client)
 ament_package(
