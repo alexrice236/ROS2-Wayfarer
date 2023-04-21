@@ -1,5 +1,5 @@
 Header header
-time state_stamp
+builtin_interfaces/Time state_stamp
 geometry_msgs/Vector3 pos
 geometry_msgs/Vector3 vel
 geometry_msgs/Quaternion quat

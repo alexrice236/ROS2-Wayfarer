@@ -1,4 +1,4 @@
 Header header
-time imu_stamp
+builtin_interfaces/Time imu_stamp
 geometry_msgs/Vector3 gyro
 geometry_msgs/Vector3 accel
