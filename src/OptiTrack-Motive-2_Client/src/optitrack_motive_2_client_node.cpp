@@ -4,7 +4,8 @@
 #include "acl_msgs/ViconState.h"
 
 // Includes for ROS
-#include "ros/ros.h"
+//#include "ros/ros.h"
+#include rclcpp/rclcpp.hpp
 
 // Includes for node
 #include <boost/program_options.hpp>
@@ -62,8 +63,10 @@ int main(int argc, char *argv[])
   int64_t offset_between_windows_and_linux = std::numeric_limits<int64_t>::max();
 
   // Init ROS
-  ros::init(argc, argv, "optitrack_motive_2_client_node");
-  ros::NodeHandle n;
+  //ros::init(argc, argv, "optitrack_motive_2_client_node");
+  //ros::NodeHandle n;
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("optitrack_motive_2_client_node");
 
 
   // Get CMDline arguments for server and local IP addresses.
@@ -98,7 +101,7 @@ int main(int argc, char *argv[])
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
-  std::map<int, ros::Publisher> rosPublishers;
+  std::map<int, rclcpp::Publisher> rosPublishers;
   std::map<int, acl_msgs::ViconState> pastStateMessages;
 
   while (true){
@@ -125,15 +128,16 @@ int main(int argc, char *argv[])
 
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
-      ros::Publisher publisher;
+      // create Publisher object
+      rclcpp::Publisher publisher;
       acl_msgs::ViconState lastState;
       acl_msgs::ViconState currentState;
 
       // Initialize publisher for rigid body if not exist.
       if (!hasPreviousMessage){
         std::string topic = "/" + mocap_packet.model_name + "/vicon";
-
-        publisher = n.advertise<acl_msgs::ViconState>(topic, 1);
+        // specify publisher topic and message type
+        auto publisher = node->create_publisher<acl_msgs::ViconState>(topic, 1);
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
       } else {
         // Get saved publisher and last state
@@ -142,7 +146,7 @@ int main(int argc, char *argv[])
       }
 
       // Add timestamp
-      currentState.header.stamp = ros::Time(packet_ntime/1e9, packet_ntime%(int64_t)1e9);
+      currentState.header.stamp = rclcpp::Time(packet_ntime/1e9, packet_ntime%(int64_t)1e9);
 
       // Convert rigid body position from NUE to ROS ENU
       Vector3d positionENUVector = positionConvertNUE2ENU(mocap_packet.pos);
@@ -198,7 +202,6 @@ int main(int argc, char *argv[])
 
       // Save state for future acceleration and twist computations
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
-
       // Publish ROS state.
       publisher.publish(currentState);
 

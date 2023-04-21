@@ -1,16 +1,21 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(optitrack_motive_2_client)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+## Compile as C++14, supported in ROS2 Foxy and newer
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
+find_package(ament_cmake REQUIRED COMPONENTS
   nav_msgs
-  roscpp
-  rostime
+  rclcpp
+  rcltime
   std_msgs
   acl_msgs # used for compatibility with ACL group's Vicon message type.
 )
@@ -104,10 +109,11 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
- INCLUDE_DIRS include
- LIBRARIES optitrack_motive_2_client
- CATKIN_DEPENDS nav_msgs acl_msgs roscpp rostime std_msgs
+
+ament_export_dependencies(nav_msgs acl_msgs rclcpp rcltime std_msgs)
+ament_export_include_directories(include)
+ament_export_libraries(optitrack_motive_2_client)
+ament_package(
 #  DEPENDS system_lib
 )
 
@@ -119,7 +125,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
   include
-  ${catkin_INCLUDE_DIRS}
+  #${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
 )
@@ -150,12 +156,11 @@ add_executable(${PROJECT_NAME}_node src/optitrack_motive_2_client_node.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME}_node
-  ${PROJECT_NAME}
-  ${catkin_LIBRARIES}
-  ${Boost_LIBRARIES}
-  ${catkin_LIBRARIES}
-)
+ament_target_dependencies(_node
+  rclcpp
+  std_msgs
+  )
+target_link_libraries(target ${Boost_LIBRARIES})
 
 #############
 ## Install ##
@@ -172,10 +177,8 @@ target_link_libraries(${PROJECT_NAME}_node
 # )
 
 ## Mark executables and/or libraries for installation
-install(TARGETS ${PROJECT_NAME}_node
-  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+install(TARGETS _node
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ## Mark cpp header files for installation
