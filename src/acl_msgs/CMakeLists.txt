@@ -28,7 +28,7 @@ find_package(geometry_msgs REQUIRED)
 #   ViconState.msg
 #   )
 
-rosidl_generate_interfaces(std_msgs geometry_msgs)
+rosidl_generate_interfaces(std_msgs)
 
 ament_export_dependencies(message_runtime std_msgs geometry_msgs)
 
