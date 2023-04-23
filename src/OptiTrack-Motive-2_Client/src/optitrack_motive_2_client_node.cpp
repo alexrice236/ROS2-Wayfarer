@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
   catch (...) {}
 
   // Init mocap framework
-  agile::motionCaptureClientFramework mocap_ = agile::motionCaptureClientFramework(szMyIPAddress, szServerIPAddress);
+  auto mocap_ = agile::motionCaptureClientFramework(szMyIPAddress, szServerIPAddress);
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
