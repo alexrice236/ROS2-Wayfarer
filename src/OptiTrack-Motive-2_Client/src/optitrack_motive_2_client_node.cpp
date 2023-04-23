@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
-      rclcpp::Publisher<acl_msgs::msg::ViconState> publisher;
+      rclcpp::Publisher publisher;
       acl_msgs::msg::ViconState lastState;
       acl_msgs::msg::ViconState currentState;
 
@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
 
       if (hasPreviousMessage){
         // Calculate twist. Requires last state message.
-        int64_t dt_nsec = packet_ntime - (lastState.header.stamp.sec*1e9 + lastState.header.stamp.nsec);
+        int64_t dt_nsec = packet_ntime - (lastState.header.stamp.sec*1e9 + lastState.header.stamp.sec);
         currentState.twist.linear.x = (currentState.pose.position.x - lastState.pose.position.x)*1e9/dt_nsec;
         currentState.twist.linear.y = (currentState.pose.position.y - lastState.pose.position.y)*1e9/dt_nsec;
         currentState.twist.linear.z = (currentState.pose.position.z - lastState.pose.position.z)*1e9/dt_nsec;
