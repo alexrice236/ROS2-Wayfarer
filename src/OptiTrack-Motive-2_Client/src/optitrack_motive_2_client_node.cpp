@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
       if (!hasPreviousMessage){
         std::string topic = "/" + mocap_packet.model_name + "/vicon";
         // specify publisher topic and message type
-        auto publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
+        auto publisher = node->create_publisher<acl_msgs::msg::ViconState>::SharedPtr(topic, 1);
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
       } else {
         // Get saved publisher and last state
