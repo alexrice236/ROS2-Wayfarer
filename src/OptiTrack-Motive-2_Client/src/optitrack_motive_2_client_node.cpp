@@ -3,9 +3,9 @@
 // Include ACL message types (https://bitbucket.org/brettlopez/acl_msgs.git)
 #include "acl_msgs/msg/vicon_state.hpp"
 
-// Includes for ROS
-//#include "ros/ros.h"
+// Includes for ROS2
 #include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
 
 // Includes for node
 #include <boost/program_options.hpp>
@@ -17,15 +17,6 @@
 
 namespace po = boost::program_options;
 using namespace Eigen;
-
-// Used to convert mocap frame (NUE) to LCM NED.
-// static Eigen::Matrix3d R_NUE2NED = [] {
-//     Eigen::Matrix3d tmp;
-//     tmp <<  1, 0, 0,
-//             0, 0, 1,
-//             0, -1, 0;
-//     return tmp;
-// }();
 
 
 // Used to convert mocap frame (NUE) to ROS ENU.
@@ -101,8 +92,8 @@ int main(int argc, char *argv[])
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
-  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState>> rosPublishers;
-  std::map<int, acl_msgs::msg::ViconState> pastStateMessages;
+  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState()>> rosPublishers;
+  std::map<int, acl_msgs::msg::ViconState()> pastStateMessages;
 
   while (true){
     // Wait for mocap packet
@@ -129,7 +120,7 @@ int main(int argc, char *argv[])
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
-      rclcpp::Publisher<acl_msgs::msg::ViconState> publisher;
+      rclcpp::Publisher<acl_msgs::msg::ViconState()> publisher;
       acl_msgs::msg::ViconState lastState;
       acl_msgs::msg::ViconState currentState;
 
@@ -137,7 +128,7 @@ int main(int argc, char *argv[])
       if (!hasPreviousMessage){
         std::string topic = "/" + mocap_packet.model_name + "/vicon";
         // specify publisher topic and message type
-        auto publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
+        auto publisher = node->create_publisher<acl_msgs::msg::ViconState()>(topic, 1);
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
       } else {
         // Get saved publisher and last state
@@ -185,11 +176,6 @@ int main(int argc, char *argv[])
         currentState.twist.angular.x = 0;
         currentState.twist.angular.y = 0;
         currentState.twist.angular.z = 0;
-
-        //currentState.twist.angular.x = twistEulerVector(0);
-        //currentState.twist.angular.y = twistEulerVector(1);
-        //currentState.twist.angular.z = twistEulerVector(2);
-        //currentState.has_twist = true;
 
         // Calculate accelerations. Requires last state message.
         currentState.accel.x = (currentState.twist.linear.x - lastState.twist.linear.x)*1e9/dt_nsec;
