@@ -175,7 +175,7 @@ ament_target_dependencies(${PROJECT_NAME}_node
 
 # target_link_libraries(target ${Boost_LIBRARIES})
 
-target_link_libraries(target ${Boost_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
 
 #############
 ## Install ##
