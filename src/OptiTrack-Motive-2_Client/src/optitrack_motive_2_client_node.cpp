@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
       // Publish ROS state.
 
-      std::cout << typeid(currentState).name() << std::endl;
+      std::cout << typeid(*currentState).name() << std::endl;
 
       publisher->publish(currentState);
 
