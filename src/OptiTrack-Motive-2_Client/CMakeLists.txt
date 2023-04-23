@@ -30,8 +30,8 @@ find_package(acl_msgs REQUIRED)
 
 
 ## System dependencies are found with CMake's conventions
-find_package(Boost REQUIRED)
-find_package(program_options)
+find_package(Boost COMPONENTS program_options REQUIRED)
+# find_package(program_options)
 find_package(Eigen3 REQUIRED NO_MODULE)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -175,7 +175,7 @@ ament_target_dependencies(${PROJECT_NAME}_node
 
 # target_link_libraries(target ${Boost_LIBRARIES})
 
-target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_node ${Boost_LIBRARIES})
 
 #############
 ## Install ##
