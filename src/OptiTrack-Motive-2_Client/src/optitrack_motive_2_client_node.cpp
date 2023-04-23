@@ -101,8 +101,8 @@ int main(int argc, char *argv[])
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
-  std::map<int, rclcpp::Publisher> rosPublishers;
-  std::map<int, acl_msgs::msg::ViconState> pastStateMessages;
+  std::map<int, typename rclcpp::Publisher> rosPublishers;
+  std::map<int, typename acl_msgs::msg::ViconState> pastStateMessages;
 
   while (true){
     // Wait for mocap packet
