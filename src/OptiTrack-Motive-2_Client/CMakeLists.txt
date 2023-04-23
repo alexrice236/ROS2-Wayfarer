@@ -142,7 +142,7 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME} SHARED
-  include/${PROJECT_NAME}/motionCaptureClientFramework.cpp
+  include/${PROJECT_NAME}/motionCaptureClientFramework.h
 )
 
 ## Add cmake target dependencies of the library
