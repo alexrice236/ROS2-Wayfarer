@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
-      // rclcpp::Publisher publisher;
+      rclcpp::Publisher publisher;
       acl_msgs::msg::ViconState lastState;
       acl_msgs::msg::ViconState currentState;
 
@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
       } else {
         // Get saved publisher and last state
-        auto publisher = rosPublishers[mocap_packet.rigid_body_id];
+        publisher = rosPublishers[mocap_packet.rigid_body_id];
         lastState = pastStateMessages[mocap_packet.rigid_body_id];
       }
 
