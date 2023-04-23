@@ -189,7 +189,7 @@ int main(int argc, char *argv[])
       // Save state for future acceleration and twist computations
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
       // Publish ROS state.
-      *publisher->publish(currentState);
+      publisher->publish(currentState);
 
     }
   }
