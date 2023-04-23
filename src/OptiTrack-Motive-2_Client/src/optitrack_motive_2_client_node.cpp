@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
       // Initialize publisher for rigid body if not exist.
       if (!hasPreviousMessage){
         // std::string topic = "/" + mocap_packet.model_name + "/vicon";
-        std::string topic = "/" + "lean01" + "/vicon";
+        std::string topic = "/lean01/vicon";
         // specify publisher topic and message type
         auto publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
