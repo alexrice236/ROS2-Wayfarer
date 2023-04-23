@@ -1,5 +1,5 @@
 // Include motion capture framework
-#include "optitrack_motive_2_client/motionCaptureClientFramework.h"
+#include "optitrack_motive_2_client/motionCaptureClientFramework.cpp"
 // Include ACL message types (https://bitbucket.org/brettlopez/acl_msgs.git)
 #include "acl_msgs/msg/vicon_state.hpp"
 
