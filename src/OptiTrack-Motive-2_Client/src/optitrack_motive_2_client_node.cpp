@@ -48,7 +48,7 @@ Quaterniond quaternionConvertNUE2ENU(double* quaternionNUE){
     return quaternionInENU;
 }
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
   // Keep track of ntime offset.
   int64_t offset_between_windows_and_linux = std::numeric_limits<int64_t>::max();
@@ -126,11 +126,8 @@ void main(int argc, char *argv[])
 
       // Initialize publisher for rigid body if not exist.
       if (!hasPreviousMessage){
-        auto intersection = mocap_packet.model_name;
-        if (!mocap_packet.model_name){
-          intersection = "lean01";
-        }
-        std::string topic = "/" + intersection + "/vicon";
+
+        std::string topic = "/" + mocap_packet.model_name + "/vicon";
         // std::string topic = "/lean01/vicon";
         // specify publisher topic and message type
         auto publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
