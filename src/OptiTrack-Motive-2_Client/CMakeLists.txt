@@ -141,7 +141,7 @@ include_directories(
 include_directories(include ${Boost_INCLUDE_DIRS})
 
 
-target_include_directories(target PUBLIC include ${Boost_INCLUDE_DIRS})
+# target_include_directories(target PUBLIC include ${Boost_INCLUDE_DIRS})
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME} SHARED
