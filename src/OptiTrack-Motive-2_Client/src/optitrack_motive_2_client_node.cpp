@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
-  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState>> rosPublishers;
+  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState>::SharedPtr> rosPublishers;
   std::map<int, acl_msgs::msg::ViconState> pastStateMessages;
 
   while (true){
@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
-      rclcpp::Publisher<acl_msgs::msg::ViconState> publisher;
+      rclcpp::Publisher<acl_msgs::msg::ViconState>::SharedPtr publisher;
       acl_msgs::msg::ViconState lastState;
       acl_msgs::msg::ViconState currentState;
 
