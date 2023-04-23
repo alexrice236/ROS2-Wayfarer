@@ -138,6 +138,9 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
 )
 
+include_directories(include ${Boost_INCLUDE_DIRS})
+
+
 target_include_directories(target PUBLIC include ${Boost_INCLUDE_DIRS})
 
 ## Declare a C++ library
