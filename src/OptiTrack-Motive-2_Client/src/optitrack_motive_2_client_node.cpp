@@ -121,8 +121,8 @@ int main(int argc, char *argv[])
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
       rclcpp::Publisher<acl_msgs::msg::ViconState>::SharedPtr publisher;
-      acl_msgs::msg::ViconState lastState;
-      acl_msgs::msg::ViconState currentState;
+      const acl_msgs::msg::ViconState lastState;
+      const acl_msgs::msg::ViconState currentState;
 
       // Initialize publisher for rigid body if not exist.
       if (!hasPreviousMessage){
@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
       // Publish ROS state.
 
-      publisher->publish(const acl_msgs::msg::ViconState currentState);
+      publisher->publish(currentState);
 
     }
   }
