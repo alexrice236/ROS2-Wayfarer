@@ -138,10 +138,7 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
 )
 
-include_directories(include ${Boost_INCLUDE_DIRS})
 
-
-# target_include_directories(target PUBLIC include ${Boost_INCLUDE_DIRS})
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME} SHARED
@@ -177,6 +174,8 @@ ament_target_dependencies(${PROJECT_NAME}_node
   )
 
 # target_link_libraries(target ${Boost_LIBRARIES})
+
+target_link_libraries(target ${Boost_LIBRARIES})
 
 #############
 ## Install ##
