@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
 
   // Some vars to calculate twist/acceleration and dts
   // Also keeps track of the various publishers
-  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState>::SharedPtr> rosPublishers;
+  std::map<int, rclcpp::Publisher<acl_msgs::msg::ViconState>> rosPublishers;
   std::map<int, acl_msgs::msg::ViconState> pastStateMessages;
 
   while (true){
@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
       // Get past state and publisher (if they exist)
       bool hasPreviousMessage = (rosPublishers.find(mocap_packet.rigid_body_id) != rosPublishers.end());
       // create Publisher object
-      rclcpp::Publisher<acl_msgs::msg::ViconState>::SharedPtr publisher;
+      rclcpp::Publisher<acl_msgs::msg::ViconState> publisher;
       acl_msgs::msg::ViconState lastState;
       acl_msgs::msg::ViconState currentState;
 
@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
         std::string topic = "/" + mocap_packet.model_name + "/vicon";
         // std::string topic = "/lean01/vicon";
         // specify publisher topic and message type
-        auto publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
+        publisher = node->create_publisher<acl_msgs::msg::ViconState>(topic, 1);
         rosPublishers[mocap_packet.rigid_body_id] = publisher;
       } else {
         // Get saved publisher and last state
@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
       // Publish ROS state.
 
-      publisher->publish(currentState);
+      publisher.publish(currentState);
 
     }
   }
