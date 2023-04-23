@@ -141,7 +141,7 @@ include_directories(
 
 
 ## Declare a C++ library
-add_library(${PROJECT_NAME} SHARED
+add_library(motionCaptureClientFramework SHARED
   include/${PROJECT_NAME}/motionCaptureClientFramework.cpp
 )
 
