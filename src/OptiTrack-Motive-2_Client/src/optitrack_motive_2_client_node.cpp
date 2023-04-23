@@ -48,7 +48,7 @@ Quaterniond quaternionConvertNUE2ENU(double* quaternionNUE){
     return quaternionInENU;
 }
 
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
   // Keep track of ntime offset.
   int64_t offset_between_windows_and_linux = std::numeric_limits<int64_t>::max();
@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
       if (!hasPreviousMessage){
         auto intersection = mocap_packet.model_name;
         if (!mocap_packet.model_name){
-          intersection = "lean01"
+          intersection = "lean01";
         }
         std::string topic = "/" + intersection + "/vicon";
         // std::string topic = "/lean01/vicon";
@@ -194,6 +194,7 @@ int main(int argc, char *argv[])
       // Save state for future acceleration and twist computations
       pastStateMessages[mocap_packet.rigid_body_id] = currentState;
       // Publish ROS state.
+
       *publisher->publish(currentState);
 
     }
